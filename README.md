@@ -218,6 +218,44 @@ The `requirements.txt` includes all necessary libraries:
 - **matplotlib** - Data visualization
 - **And more...** (see requirements.txt for complete list)
 
+## Configuration
+
+### Email Setup (Required for Automated Reports)
+
+The system sends automated email reports after processing. To enable this feature:
+
+**Step 1: Generate Gmail App Password**
+1. Go to [Google Account Security](https://myaccount.google.com/security)
+2. Enable 2-Factor Authentication if not already enabled
+3. Go to "App passwords" section
+4. Generate a new app password for "Mail"
+5. Copy the 16-character password (e.g., `abcd efgh ijkl mnop`)
+
+**Step 2: Configure Email Settings**
+Edit `config/email_config.json`:
+```json
+{
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "sender_email": "your-email@gmail.com",
+  "sender_password": "your-16-character-app-password",
+  "recipients": ["recipient@email.com"],
+  "use_tls": true
+}
+```
+
+**Important Notes:**
+- Use your **App Password**, not your regular Gmail password
+- The App Password is 16 characters (no spaces when entering)
+- Recipients will receive automated analysis reports
+- Email reports include job analysis results, salary predictions, and insights
+
+### Other Configuration Files
+
+**`config/cron_config.json`** - Scheduling settings for automated runs
+**`data/outputs/`** - Where analysis results are saved
+**`data/raw/linkedin_screenshots/`** - Where job screenshots are stored
+
 ### The Story: From Screenshot to Smart Analysis
 
 Imagine you're scrolling through LinkedIn and you see a job posting that looks interesting. Instead of spending 10 minutes reading through all the details, you just take a screenshot and let our system do the work.
