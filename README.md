@@ -110,7 +110,7 @@ For the Computer Vision notebook, you need LinkedIn job screenshots:
 ## Usage
 
 ### Web Interface Dashboard
-<img src="https://i.imgur.com/WsCYydX.png" width="600">
+<img src="https://i.imgur.com/LX7VW5b.png" width="600">
 
 **Main Interface:** The Job Board Vision Assistant provides a clean, intuitive web interface with two main workflows:
 - **Complete Automation**: Runs the full end-to-end pipeline
