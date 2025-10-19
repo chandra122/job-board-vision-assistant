@@ -1,0 +1,19 @@
+{
+  "schedule": {
+    "enabled": true,
+    "frequency": "daily",
+    "time": "09:00",
+    "job_role": "Data Engineer",
+    "max_jobs": 5
+  },
+  "notifications": {
+    "email_on_success": true,
+    "email_on_failure": true,
+    "log_retention_days": 30
+  },
+  "system": {
+    "platform": "windows",
+    "working_directory": "D:\\RegisUniversity\\Practicum\\computervision",
+    "python_path": "python"
+  }
+}

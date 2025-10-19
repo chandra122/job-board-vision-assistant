@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board Vision Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .workflows-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .workflow-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .workflow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+        
+        .workflow-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .workflow-card p {
+            color: #6c757d;
+            line-height: 1.5;
+        }
+        
+        .workflow-card .number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .featured {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+        }
+        
+        .featured h3 {
+            color: white;
+        }
+        
+        .featured p {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .featured .number {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .status-bar {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .status-bar h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .status-indicators {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .status-item {
+            background: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            font-size: 0.9em;
+        }
+        
+        .status-success {
+            background: #d4edda;
+            border-color: #c3e6cb;
+            color: #155724;
+        }
+        
+        .status-failed {
+            background: #f8d7da;
+            border-color: #f5c6cb;
+            color: #721c24;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Board Vision Assistant</h1>
+            <p>Complete Job Analysis Pipeline with Machine Learning</p>
+        </div>
+        
+        <div class="content">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">Workflow</h2>
+            <p style="color: #6c757d; margin-bottom: 30px;">
+                Run the complete job analysis pipeline with LinkedIn data collection, OCR processing, ML training, and automated email reports.
+            </p>
+            
+            <div class="workflows-grid">
+                <a href="/workflow/5" class="workflow-card featured">
+                    <h3>Complete Automation</h3>
+                    <p>Complete End-to-End Automation</p>
+                </a>
+                
+                <a href="/visualizations" class="workflow-card" style="background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color: white;">
+                    <h3>Data Visualizations</h3>
+                    <p>ML & Computer Vision Analytics</p>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <p>Job Board Vision Assistant | Microsoft CPU Optimized | Chandra Sekhar Bollineni</p>
+        </div>
+    </div>
+</body>
+</html>

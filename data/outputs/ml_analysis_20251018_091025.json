@@ -1,0 +1,104 @@
+{
+  "total_jobs": 5,
+  "analysis_date": "2025-10-18T09:10:25.507418",
+  "jobs": {
+    "Job_3": {
+      "role": "Software Engineer; Fullstack, Early Career",
+      "company": "Notion",
+      "location": "New York NY",
+      "posted_time": "13 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Entry level",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$126,000.00/yr - $180,000.00/yr",
+      "ml_category": "Software Engineer",
+      "ml_seniority": "mid-level",
+      "ml_salary_prediction": 126000.0
+    },
+    "Job_4": {
+      "role": "Software Engineer; Fullstack, Early Career",
+      "company": "Notion",
+      "location": "San Francisco, CA",
+      "posted_time": "13 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Entry level",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$126,000.00/yr - $180,000.00/yr",
+      "ml_category": "Software Engineer",
+      "ml_seniority": "mid-level",
+      "ml_salary_prediction": 126000.0
+    },
+    "Job_2": {
+      "role": "Data Engineer II",
+      "company": "Microsoft",
+      "location": "Redmond; WA",
+      "posted_time": "11 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Not Applicable",
+      "Job_Function": "Industries",
+      "Industries": "Information",
+      "pay_range": "$100,600.00/yr - $215,400.00/yr",
+      "ml_category": "Data Engineer",
+      "ml_seniority": "mid-level",
+      "ml_salary_prediction": 100600.0
+    },
+    "Job_5": {
+      "role": "Data Engineer",
+      "company": "Phamily",
+      "location": "United States",
+      "posted_time": "12 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Entry level",
+      "Job_Function": "Industries",
+      "Industries": "Information",
+      "pay_range": "$110,000.00/yr - $140,000.00/yr",
+      "ml_category": "Data Engineer",
+      "ml_seniority": "mid-level",
+      "ml_salary_prediction": 110000.0
+    },
+    "Job_1": {
+      "role": "Data Engineer (LS)",
+      "company": "Games",
+      "location": "United States",
+      "posted_time": "19 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Not Applicable",
+      "Job_Function": "Industries",
+      "Industries": "Other",
+      "pay_range": "$170,000.00/yr - $720,000.00/yr",
+      "ml_category": "Data Engineer",
+      "ml_seniority": "mid-level",
+      "ml_salary_prediction": 170000.0
+    }
+  },
+  "summary": "Analyzed 5 jobs successfully",
+  "ml_predictions": {
+    "Job_3": {
+      "category": "Software Engineer",
+      "seniority": "mid-level",
+      "salary_prediction": 126000.0
+    },
+    "Job_4": {
+      "category": "Software Engineer",
+      "seniority": "mid-level",
+      "salary_prediction": 126000.0
+    },
+    "Job_2": {
+      "category": "Data Engineer",
+      "seniority": "mid-level",
+      "salary_prediction": 100600.0
+    },
+    "Job_5": {
+      "category": "Data Engineer",
+      "seniority": "mid-level",
+      "salary_prediction": 110000.0
+    },
+    "Job_1": {
+      "category": "Data Engineer",
+      "seniority": "mid-level",
+      "salary_prediction": 170000.0
+    }
+  }
+}

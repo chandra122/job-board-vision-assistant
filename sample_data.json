@@ -1,0 +1,104 @@
+{
+  "total_jobs": 5,
+  "analysis_date": "2025-10-14T19:56:07.446912",
+  "jobs": {
+    "Job_4": {
+      "role": "Data Scientist; Product Analytics",
+      "company": "Meta",
+      "location": "Menlo Park; CA",
+      "posted_time": "16 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Not Applicable",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$46.63/yr - $134,000.00/yr",
+      "ml_category": "data_scientist",
+      "ml_seniority": "Model not trained",
+      "ml_salary_prediction": 115000.0
+    },
+    "Job_5": {
+      "role": "Data Scientist",
+      "company": "DQ",
+      "location": "Dairy Queen",
+      "posted_time": "hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Entry level",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$105,561.00/yr - $129,313.00/yr",
+      "ml_category": "data_scientist",
+      "ml_seniority": "Model not trained",
+      "ml_salary_prediction": 105561.0
+    },
+    "Job_3": {
+      "role": "Data Scientist",
+      "company": "Microsoft",
+      "location": "United States",
+      "posted_time": "18 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Not Applicable",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$84,200.00/yr - $180,400.00/yr",
+      "ml_category": "data_scientist",
+      "ml_seniority": "Model not trained",
+      "ml_salary_prediction": 84200.0
+    },
+    "Job_2": {
+      "role": "Data Scientist; Product Analytics",
+      "company": "Meta",
+      "location": "New York NY",
+      "posted_time": "16 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Not Applicable",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$46.63/yr - $134,000.00/yr",
+      "ml_category": "data_scientist",
+      "ml_seniority": "Model not trained",
+      "ml_salary_prediction": 95000.0
+    },
+    "Job_1": {
+      "role": "Data Scientist; New Graduate",
+      "company": "Duolingo for Schools",
+      "location": "Pittsburgh; PA",
+      "posted_time": "14 hours ago",
+      "Seniority_level": "Employment type",
+      "Employment_type": "Entry level",
+      "Job_Function": "Industries",
+      "Industries": "Engineering and Information",
+      "pay_range": "$135,000.00/yr",
+      "ml_category": "data_scientist",
+      "ml_seniority": "Model not trained",
+      "ml_salary_prediction": 135000.0
+    }
+  },
+  "summary": "Analyzed 5 jobs successfully",
+  "ml_predictions": {
+    "Job_4": {
+      "category": "data_scientist",
+      "seniority": "Model not trained",
+      "salary_prediction": 115000.0
+    },
+    "Job_5": {
+      "category": "data_scientist",
+      "seniority": "Model not trained",
+      "salary_prediction": 105561.0
+    },
+    "Job_3": {
+      "category": "data_scientist",
+      "seniority": "Model not trained",
+      "salary_prediction": 84200.0
+    },
+    "Job_2": {
+      "category": "data_scientist",
+      "seniority": "Model not trained",
+      "salary_prediction": 95000.0
+    },
+    "Job_1": {
+      "category": "data_scientist",
+      "seniority": "Model not trained",
+      "salary_prediction": 135000.0
+    }
+  }
+}

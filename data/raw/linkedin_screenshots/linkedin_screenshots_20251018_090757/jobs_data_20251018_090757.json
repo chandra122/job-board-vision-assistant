@@ -1,0 +1,202 @@
+[
+  {
+    "job_id": 1,
+    "job_term": "Data Engineer",
+    "timestamp": "20251018_090757",
+    "job_card_info": {
+      "raw_text": "\n        \n\n        \n          \n          \n              \n        \n        Data Engineer (L5) - Games\n      \n      \n          \n        \n\n      \n        \n    \n        \n      \n  \n    \n  \n\n        \n          \n            \n        Data Engineer (L5) - Games\n      \n          \n\n            \n              \n          \n            Netflix\n          \n      \n            \n\n\n            \n              \n          \n            United States\n          \n\n        \n    \n    \n    \n    \n\n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      19 hours ago\n  \n          \n\n      \n            \n        \n      \n    \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_1.png"
+    },
+    "pay_info": {
+      "raw_text": "\n\n          \n            Pay found in job post\n          \n\n\n      \n        \n      \n        Retrieved from the description.\n      \n\n          \n            Base pay range\n            \n  \n  \n  \n  \n  \n  \n  \n  \n\n    \n      $170,000.00/yr - $720,000.00/yr\n    \n  \n          \n    \n      \n    ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_1.png",
+      "element_size": {
+        "width": 581,
+        "height": 158.984375
+      },
+      "position": {
+        "x": 582,
+        "y": -2695
+      }
+    },
+    "job_attributes": {
+      "raw_text": "\n        \n          \n            Seniority level\n          \n          \n            Not Applicable\n          \n        \n        \n          \n            Employment type\n          \n          \n            Full-time\n          \n        \n          \n            \n              Job function\n            \n            \n              Other\n            \n          \n          \n            \n              Industries\n            \n            \n            Entertainment Providers\n            \n          \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_1.png",
+      "element_size": {
+        "width": 576,
+        "height": 128
+      },
+      "position": {
+        "x": 582,
+        "y": 3627.984375
+      }
+    },
+    "job_url": "https://www.linkedin.com/jobs/view/data-engineer-l5-games-at-netflix-4313842380?position=1&pageNum=0&refId=ToKii4B4zV3w5%2BQRv25DCQ%3D%3D&trackingId=7w8ztl1ydQKaLcfPnQp%2FuA%3D%3D",
+    "screenshots": {
+      "job_card": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_1.png",
+      "pay_info": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_1.png",
+      "job_attributes": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_1.png",
+      "job_details": null
+    }
+  },
+  {
+    "job_id": 2,
+    "job_term": "Data Engineer",
+    "timestamp": "20251018_090757",
+    "job_card_info": {
+      "raw_text": "\n        \n\n        \n          \n          \n              \n        \n        Data Engineer II\n      \n      \n          \n        \n\n      \n        \n    \n        \n      \n  \n    \n  \n\n        \n          \n            \n        Data Engineer II\n      \n          \n\n            \n              \n          \n            Microsoft\n          \n      \n            \n\n\n            \n              \n          \n            Redmond, WA\n          \n\n        \n    \n    \n    \n    \n\n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      11 hours ago\n  \n          \n\n      \n            \n        \n      \n    \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_2.png"
+    },
+    "pay_info": {
+      "raw_text": "\n\n          \n            Pay found in job post\n          \n\n\n      \n        \n      \n        Retrieved from the description.\n      \n\n          \n            Base pay range\n            \n  \n  \n  \n  \n  \n  \n  \n  \n\n    \n      $100,600.00/yr - $215,400.00/yr\n    \n  \n          \n    \n      \n    ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_2.png",
+      "element_size": {
+        "width": 581,
+        "height": 158.984375
+      },
+      "position": {
+        "x": 582,
+        "y": -3448
+      }
+    },
+    "job_attributes": {
+      "raw_text": "\n        \n          \n            Seniority level\n          \n          \n            Not Applicable\n          \n        \n        \n          \n            Employment type\n          \n          \n            Full-time\n          \n        \n          \n            \n              Job function\n            \n            \n              Information Technology\n            \n          \n          \n            \n              Industries\n            \n            \n            Software Development\n            \n          \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_2.png",
+      "element_size": {
+        "width": 576,
+        "height": 128
+      },
+      "position": {
+        "x": 582,
+        "y": 4379.984375
+      }
+    },
+    "job_url": "https://www.linkedin.com/jobs/search/?keywords=Data%20Engineer&location=United%20States&f_TPR=r86400&currentJobId=4316568842&position=2&pageNum=0",
+    "screenshots": {
+      "job_card": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_2.png",
+      "pay_info": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_2.png",
+      "job_attributes": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_2.png",
+      "job_details": null
+    }
+  },
+  {
+    "job_id": 3,
+    "job_term": "Data Engineer",
+    "timestamp": "20251018_090757",
+    "job_card_info": {
+      "raw_text": "\n        \n\n        \n          \n          \n              \n        \n        Software Engineer, Fullstack, Early Career\n      \n      \n          \n        \n\n      \n        \n    \n        \n      \n  \n    \n  \n\n        \n          \n            \n        Software Engineer, Fullstack, Early Career\n      \n          \n\n            \n              \n          \n            Notion\n          \n      \n            \n\n\n            \n              \n          \n            New York, NY\n          \n\n        \n    \n    \n    \n    \n\n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      13 hours ago\n  \n          \n\n      \n            \n        \n      \n    \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_3.png"
+    },
+    "pay_info": {
+      "raw_text": "\n\n          \n            Pay found in job post\n          \n\n\n      \n        \n      \n        Retrieved from the description.\n      \n\n          \n            Base pay range\n            \n  \n  \n  \n  \n  \n  \n  \n  \n\n    \n      $126,000.00/yr - $180,000.00/yr\n    \n  \n          \n    \n      \n    ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_3.png",
+      "element_size": {
+        "width": 581,
+        "height": 158.984375
+      },
+      "position": {
+        "x": 582,
+        "y": -3156
+      }
+    },
+    "job_attributes": {
+      "raw_text": "\n        \n          \n            Seniority level\n          \n          \n            Entry level\n          \n        \n        \n          \n            Employment type\n          \n          \n            Full-time\n          \n        \n          \n            \n              Job function\n            \n            \n              Engineering and Information Technology\n            \n          \n          \n            \n              Industries\n            \n            \n            Software Development\n            \n          \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_3.png",
+      "element_size": {
+        "width": 576,
+        "height": 152
+      },
+      "position": {
+        "x": 582,
+        "y": 4063.984375
+      }
+    },
+    "job_url": "https://www.linkedin.com/jobs/search/?keywords=Data%20Engineer&location=United%20States&f_TPR=r86400&currentJobId=4296641686&position=3&pageNum=0",
+    "screenshots": {
+      "job_card": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_3.png",
+      "pay_info": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_3.png",
+      "job_attributes": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_3.png",
+      "job_details": null
+    }
+  },
+  {
+    "job_id": 4,
+    "job_term": "Data Engineer",
+    "timestamp": "20251018_090757",
+    "job_card_info": {
+      "raw_text": "\n        \n\n        \n          \n          \n              \n        \n        Software Engineer, Fullstack, Early Career\n      \n      \n          \n        \n\n      \n        \n    \n        \n      \n  \n    \n  \n\n        \n          \n            \n        Software Engineer, Fullstack, Early Career\n      \n          \n\n            \n              \n          \n            Notion\n          \n      \n            \n\n\n            \n              \n          \n            San Francisco, CA\n          \n\n        \n    \n    \n    \n    \n\n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      13 hours ago\n  \n          \n\n      \n            \n        \n      \n    \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_4.png"
+    },
+    "pay_info": {
+      "raw_text": "\n\n          \n            Pay found in job post\n          \n\n\n      \n        \n      \n        Retrieved from the description.\n      \n\n          \n            Base pay range\n            \n  \n  \n  \n  \n  \n  \n  \n  \n\n    \n      $126,000.00/yr - $180,000.00/yr\n    \n  \n          \n    \n      \n    ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_4.png",
+      "element_size": {
+        "width": 581,
+        "height": 158.984375
+      },
+      "position": {
+        "x": 582,
+        "y": -3156
+      }
+    },
+    "job_attributes": {
+      "raw_text": "\n        \n          \n            Seniority level\n          \n          \n            Entry level\n          \n        \n        \n          \n            Employment type\n          \n          \n            Full-time\n          \n        \n          \n            \n              Job function\n            \n            \n              Engineering and Information Technology\n            \n          \n          \n            \n              Industries\n            \n            \n            Software Development\n            \n          \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_4.png",
+      "element_size": {
+        "width": 576,
+        "height": 152
+      },
+      "position": {
+        "x": 582,
+        "y": 4063.984375
+      }
+    },
+    "job_url": "https://www.linkedin.com/jobs/search/?keywords=Data%20Engineer&location=United%20States&f_TPR=r86400&currentJobId=4296646591&position=4&pageNum=0",
+    "screenshots": {
+      "job_card": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_4.png",
+      "pay_info": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_4.png",
+      "job_attributes": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_4.png",
+      "job_details": null
+    }
+  },
+  {
+    "job_id": 5,
+    "job_term": "Data Engineer",
+    "timestamp": "20251018_090757",
+    "job_card_info": {
+      "raw_text": "\n        \n\n        \n          \n          \n              \n        \n        Data Engineer\n      \n      \n          \n        \n\n      \n        \n    \n        \n      \n  \n    \n  \n\n        \n          \n            \n        Data Engineer\n      \n          \n\n            \n              \n          \n            Phamily\n          \n      \n            \n\n\n            \n              \n          \n            United States\n          \n\n        \n    \n    \n    \n    \n\n  \n\n          \n            \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n\n      12 hours ago\n  \n          \n\n      \n            \n        \n      \n    \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_5.png"
+    },
+    "pay_info": {
+      "raw_text": "\n\n          \n            Pay found in job post\n          \n\n\n      \n        \n      \n        Retrieved from the description.\n      \n\n          \n            Base pay range\n            \n  \n  \n  \n  \n  \n  \n  \n  \n\n    \n      $110,000.00/yr - $140,000.00/yr\n    \n  \n          \n    \n      \n    ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_5.png",
+      "element_size": {
+        "width": 581,
+        "height": 158.984375
+      },
+      "position": {
+        "x": 582,
+        "y": -2144
+      }
+    },
+    "job_attributes": {
+      "raw_text": "\n        \n          \n            Seniority level\n          \n          \n            Entry level\n          \n        \n        \n          \n            Employment type\n          \n          \n            Full-time\n          \n        \n          \n            \n              Job function\n            \n            \n              Information Technology\n            \n          \n          \n            \n              Industries\n            \n            \n            Hospitals and Health Care\n            \n          \n      ",
+      "screenshot_path": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_5.png",
+      "element_size": {
+        "width": 576,
+        "height": 128
+      },
+      "position": {
+        "x": 582,
+        "y": 3016.984375
+      }
+    },
+    "job_url": "https://www.linkedin.com/jobs/search/?keywords=Data%20Engineer&location=United%20States&f_TPR=r86400&currentJobId=4306275986&position=5&pageNum=0",
+    "screenshots": {
+      "job_card": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_card_5.png",
+      "pay_info": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\pay_info_Job_5.png",
+      "job_attributes": "data/raw/linkedin_screenshots/linkedin_screenshots_20251018_090757\\job_attributes_Job_5.png",
+      "job_details": null
+    }
+  }
+]

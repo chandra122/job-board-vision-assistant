@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Job Board Vision Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 30px;
+        }
+        
+        .tab {
+            padding: 15px 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: #6c757d;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        
+        .stat-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .job-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .job-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .job-card .company {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .job-card .location {
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        
+        .job-card .pay-range {
+            background: #d4edda;
+            color: #155724;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        
+        .job-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .detail-item {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .detail-item .label {
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 0.9em;
+        }
+        
+        .detail-item .value {
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        
+        .ml-predictions {
+            background: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        
+        .ml-predictions h4 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+        
+        .ml-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .ml-item .label {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .ml-item .value {
+            color: #1976d2;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .refresh-btn {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .refresh-btn:hover {
+            background: #5a6fd8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/" class="back-btn">← Back</a>
+            <h1>Analysis Results</h1>
+        </div>
+        
+        <div class="content">
+            <button class="refresh-btn" onclick="loadResults()">Refresh Results</button>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="showTab('overview')">Overview</button>
+                <button class="tab" onclick="showTab('jobs')">Job Listings</button>
+                <button class="tab" onclick="showTab('ml')">ML Analysis</button>
+            </div>
+            
+            <div id="overview" class="tab-content active">
+                <div class="loading" id="overviewLoading">Loading overview...</div>
+                <div id="overviewContent" style="display: none;">
+                    <div class="stats-grid" id="statsGrid"></div>
+                </div>
+            </div>
+            
+            <div id="jobs" class="tab-content">
+                <div class="loading" id="jobsLoading">Loading job listings...</div>
+                <div id="jobsContent" style="display: none;"></div>
+            </div>
+            
+            <div id="ml" class="tab-content">
+                <div class="loading" id="mlLoading">Loading ML analysis...</div>
+                <div id="mlContent" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+        
+        async function loadResults() {
+            console.log('Starting to load results...');
+            try {
+                await Promise.all([
+                    loadOverview(),
+                    loadJobs(),
+                    loadMLAnalysis()
+                ]);
+                console.log('All results loaded successfully');
+            } catch (error) {
+                console.error('Error loading results:', error);
+            }
+        }
+        
+        async function loadOverview() {
+            try {
+                console.log('Loading overview...');
+                const response = await fetch('/api/results');
+                const data = await response.json();
+                
+                console.log('API Response:', data);
+                
+                if (!data.success) {
+                    console.log('API returned success=false:', data.message);
+                    document.getElementById('overviewLoading').innerHTML = 
+                        '<div class="error">No results found. Run a workflow first.</div>';
+                    return;
+                }
+                
+                const resultData = data.data;
+                console.log('Result data:', resultData);
+                
+                // Update stats
+                const statsGrid = document.getElementById('statsGrid');
+                statsGrid.innerHTML = `
+                    <div class="stat-card">
+                        <h3>Total Jobs</h3>
+                        <div class="value">${resultData.total_jobs || 0}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>ML Accuracy</h3>
+                        <div class="value">${resultData.ml_accuracy || 0}%</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Average Salary</h3>
+                        <div class="value">$${resultData.avg_salary ? resultData.avg_salary.toLocaleString() : '0'}</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Processing Time</h3>
+                        <div class="value">${resultData.processing_time || 0} min</div>
+                    </div>
+                `;
+                
+                console.log('Updated stats grid');
+                document.getElementById('overviewLoading').style.display = 'none';
+                document.getElementById('overviewContent').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Error loading overview:', error);
+                document.getElementById('overviewLoading').innerHTML = 
+                    '<div class="error">Error loading overview: ' + error.message + '</div>';
+            }
+        }
+        
+        async function loadJobs() {
+            try {
+                const response = await fetch('/api/jobs');
+                const data = await response.json();
+                
+                if (data.error) {
+                    document.getElementById('jobsLoading').innerHTML = 
+                        '<div class="error">No job data found. Run a workflow first.</div>';
+                    return;
+                }
+                
+                const jobsContent = document.getElementById('jobsContent');
+                jobsContent.innerHTML = '';
+                
+                Object.entries(data).forEach(([jobId, job]) => {
+                    const jobCard = document.createElement('div');
+                    jobCard.className = 'job-card';
+                    jobCard.innerHTML = `
+                        <h3>${job.role || 'Unknown Role'}</h3>
+                        <div class="company">${job.company || 'Unknown Company'}</div>
+                        <div class="location">${job.location || 'Unknown Location'}</div>
+                        ${job.pay_range ? `<div class="pay-range">${job.pay_range}</div>` : ''}
+                        <div class="job-details">
+                            <div class="detail-item">
+                                <div class="label">Posted</div>
+                                <div class="value">${job.posted_time || 'Unknown'}</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="label">Employment Type</div>
+                                <div class="value">${job.Employment_type || 'Unknown'}</div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="label">Industry</div>
+                                <div class="value">${job.Industries || 'Unknown'}</div>
+                            </div>
+                        </div>
+                        ${job.ml_category || job.ml_seniority || job.ml_salary_prediction ? `
+                            <div class="ml-predictions">
+                                <h4>ML Predictions</h4>
+                                ${job.ml_category ? `
+                                    <div class="ml-item">
+                                        <span class="label">Category:</span>
+                                        <span class="value">${job.ml_category}</span>
+                                    </div>
+                                ` : ''}
+                                ${job.ml_seniority ? `
+                                    <div class="ml-item">
+                                        <span class="label">Seniority:</span>
+                                        <span class="value">${job.ml_seniority}</span>
+                                    </div>
+                                ` : ''}
+                                ${job.ml_salary_prediction ? `
+                                    <div class="ml-item">
+                                        <span class="label">Predicted Salary:</span>
+                                        <span class="value">$${job.ml_salary_prediction.toLocaleString()}</span>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        ` : ''}
+                    `;
+                    jobsContent.appendChild(jobCard);
+                });
+                
+                document.getElementById('jobsLoading').style.display = 'none';
+                document.getElementById('jobsContent').style.display = 'block';
+                
+            } catch (error) {
+                document.getElementById('jobsLoading').innerHTML = 
+                    '<div class="error">Error loading jobs: ' + error.message + '</div>';
+            }
+        }
+        
+        async function loadMLAnalysis() {
+            try {
+                const response = await fetch('/api/results');
+                const data = await response.json();
+                
+                if (!data.success) {
+                    document.getElementById('mlLoading').innerHTML = 
+                        '<div class="error">No ML analysis found. Run a workflow first.</div>';
+                    return;
+                }
+                
+                const resultData = data.data;
+                const mlContent = document.getElementById('mlContent');
+                mlContent.innerHTML = '';
+                
+                // Create ML analysis summary
+                const summaryCard = document.createElement('div');
+                summaryCard.className = 'job-card';
+                summaryCard.innerHTML = `
+                    <h3>ML Analysis Summary</h3>
+                    <div class="ml-predictions">
+                        <h4>Overall Performance</h4>
+                        <div class="ml-item">
+                            <span class="label">Model Accuracy:</span>
+                            <span class="value">${resultData.ml_accuracy || 0}%</span>
+                        </div>
+                        <div class="ml-item">
+                            <span class="label">Average Salary Predicted:</span>
+                            <span class="value">$${resultData.avg_salary ? resultData.avg_salary.toLocaleString() : '0'}</span>
+                        </div>
+                        <div class="ml-item">
+                            <span class="label">Processing Time:</span>
+                            <span class="value">${resultData.processing_time || 0} minutes</span>
+                        </div>
+                    </div>
+                `;
+                mlContent.appendChild(summaryCard);
+                
+                // Create distribution charts summary
+                if (resultData.category_distribution) {
+                    const categoryCard = document.createElement('div');
+                    categoryCard.className = 'job-card';
+                    categoryCard.innerHTML = `
+                        <h3>Job Category Distribution</h3>
+                        <div class="ml-predictions">
+                            ${Object.entries(resultData.category_distribution).map(([category, count]) => `
+                                <div class="ml-item">
+                                    <span class="label">${category.replace('_', ' ').toUpperCase()}:</span>
+                                    <span class="value">${count} jobs</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                    mlContent.appendChild(categoryCard);
+                }
+                
+                if (resultData.company_distribution) {
+                    const companyCard = document.createElement('div');
+                    companyCard.className = 'job-card';
+                    companyCard.innerHTML = `
+                        <h3>Company Distribution</h3>
+                        <div class="ml-predictions">
+                            ${Object.entries(resultData.company_distribution).map(([company, count]) => `
+                                <div class="ml-item">
+                                    <span class="label">${company}:</span>
+                                    <span class="value">${count} jobs</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                    mlContent.appendChild(companyCard);
+                }
+                
+                document.getElementById('mlLoading').style.display = 'none';
+                document.getElementById('mlContent').style.display = 'block';
+                
+            } catch (error) {
+                document.getElementById('mlLoading').innerHTML = 
+                    '<div class="error">Error loading ML analysis: ' + error.message + '</div>';
+            }
+        }
+        
+        // Load results on page load
+        window.onload = loadResults;
+    </script>
+</body>
+</html>
