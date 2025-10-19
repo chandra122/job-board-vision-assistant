@@ -12,6 +12,16 @@ This project solves that problem. It uses computer vision to read job postings f
 
 The system uses EasyOCR to read text from images, OpenCV to clean up the images, and Machine Learning to classify jobs and predict salaries.
 
+## The Problem We Solve
+
+**Job searching is broken.** Every day, millions of job seekers waste hours manually reading through job postings, trying to extract salary information, understand requirements, and determine if they're a good fit. This manual process is:
+- **Time-consuming** - Reading each job posting takes 5-10 minutes
+- **Error-prone** - Missing key details like salary ranges or requirements
+- **Inefficient** - Spending time on jobs that don't match your criteria
+- **Repetitive** - Same manual process for hundreds of applications
+
+**Solution:** Capture job posting screenshots → Extract text using OCR → Process with ML models → Generate structured data with salary predictions, job classification, and requirement analysis → Send automated email reports in seconds.
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
